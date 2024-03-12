@@ -60,12 +60,14 @@ LABEL org.label-schema.docker.cmd 'docker run \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         apt-transport-https \
+        android-sdk-libsparse-utils \
         binfmt-support \
         bmap-tools \
         btrfs-progs \
         busybox \
         bzip2 \
         ca-certificates \
+        cryptsetup \
         debian-ports-archive-keyring \
         debootstrap \
         dosfstools \
@@ -94,6 +96,7 @@ RUN apt-get update && \
         user-mode-linux \
         xfsprogs \
         xz-utils \
+        yq \
         zip \
         zstd \
         makepkg \
